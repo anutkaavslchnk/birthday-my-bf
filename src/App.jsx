@@ -1,4 +1,4 @@
-import {useState } from "react";
+import {useState, useEffect} from "react";
 import Begin from "./components/Begin/Begin";
 import Modal from "./components/Modal/Modal";
 import Body from "./components/Body/Body";
@@ -8,7 +8,7 @@ import Body from "./components/Body/Body";
 import BalloonsModal from "./components/BalloonsModal/BalloonsModal";
 
 const App = () => {
-  // const [questionBefore, setQuestionBefore] = useState(null);
+  const [questionBefore, setQuestionBefore] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [show, setShow]=useState(false);
  
@@ -20,18 +20,18 @@ const handleShow=()=>{
 }
 
 
-  // useEffect(() => {
-  //   let userResponse = null;
-  //   while (userResponse !== "Yes kicia") {
-  //     userResponse = prompt("Confirm that you miliy, if yes type - Yes kicia");
-  //     if (userResponse === "Yes kicia") {
-  //       alert("Ok, you confirmed that you are my Dany");
-  //       setQuestionBefore(userResponse);
-  //     } else {
-  //       alert("Try again");
-  //     }
-  //   }
-  // }, []);
+  useEffect(() => {
+    let userResponse = null;
+    while (userResponse !== "Yes kicia") {
+      userResponse = prompt("Confirm that you miliy, if yes type - Yes kicia");
+      if (userResponse === "Yes kicia") {
+        alert("Ok, you confirmed that you are my Dany");
+        setQuestionBefore(userResponse);
+      } else {
+        alert("Try again");
+      }
+    }
+  }, []);
 
   const handleOpenModal = () => {
     setIsOpen(true);
@@ -50,11 +50,11 @@ const handleCloseBalloonsModal=()=>{
 
   return (
     <>
-    {/* <Begin handleOpenModal={handleOpenModal} />
+    <Begin handleOpenModal={handleOpenModal} />
       {questionBefore === "Yes kicia" && (
         <Begin handleOpenModal={handleOpenModal} />
-      )} */}
-      <Begin handleOpenModal={handleOpenModal} />
+      )}
+      {/* <Begin handleOpenModal={handleOpenModal} /> */}
       {isOpen && (
         <Modal handleCloseModal={handleCloseModal} />
       )}
