@@ -1,0 +1,20 @@
+[
+{
+		"id": 1,
+		"wishes": "Smile",
+		"completed": true
+		
+	},
+	{
+		"id": 2,
+		"wishes": "Be happy",
+		"completed": false
+	},
+	{
+		"id": 3,
+		"wishes": "Kiss more",
+		"completed": false
+		
+		
+	}
+]

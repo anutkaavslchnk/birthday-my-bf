@@ -1,0 +1,160 @@
+.title{
+    font-size:60px;
+}
+.par{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.btnhandle{
+    padding:10px 20px 10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color:dodgerblue;
+    font-family: 'sans-serif', 'Kanit';
+    color:white;
+    font-size:20px;
+    margin-top: 8px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+  }
+  .btnhandle{
+  
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  
+  }
+ .btnscont{
+display: flex;
+justify-content: center;
+gap:10px;
+ }
+ .btns{
+    padding:10px 20px 10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color:dodgerblue;
+    font-family: 'sans-serif', 'Kanit';
+    color:white;
+    font-size:20px;
+    margin-top: 8px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+ }
+ .btns:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  
+ }
+ .next{
+ 
+    padding:10px 20px 10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color:red;
+    font-family: 'sans-serif', 'Kanit';
+    color:white;
+    font-size:20px;
+    margin-top: 80px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+  
+}
+.next:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+ .text:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    left: 30%;
+    top: 50%;
+    animation: abomination1 7.5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+    @keyframes abomination1 {
+    0% {
+      content: "S";
+    }
+    4% {
+      content: "So";
+    }
+    8% {
+      content: "So ";
+    }
+    12% {
+      content: "So p";
+    }
+    16% {
+      content: "So pr";
+    }
+    20% {
+      content: "So pro";
+    }
+    24% {
+      content: "So prou";
+    }
+    28% {
+      content: "So proud";
+    }
+    32% {
+      content: "So proud ";
+    }
+    36% {
+      content: "So proud o";
+    }
+    40% {
+      content: "So proud of";
+    }
+    44% {
+      content: "So proud of ";
+    }
+    48% {
+      content: "So proud of y";
+    }
+    52% {
+      content: "So proud of yo";
+    }
+    56% {
+      content: "So proud of you";
+    }
+    60% {
+      content: "So proud of you,";
+    }
+    64% {
+      content: "So proud of you, ";
+    }
+    68% {
+      content: "So proud of you, d";
+    }
+    72% {
+      content: "So proud of you, da";
+    }
+    76% {
+      content: "So proud of you, dar";
+    }
+    80% {
+      content: "So proud of you, darl";
+    }
+    84% {
+      content: "So proud of you, darli";
+    }
+    88% {
+      content: "So proud of you, darlin";
+    }
+    92% {
+      content: "So proud of you, darling";
+    }
+    96% {
+      content: "So proud of you, darling ";
+    }
+    100% {
+      content: "So proud of you, darling ❤️";
+    }
+}
+
+

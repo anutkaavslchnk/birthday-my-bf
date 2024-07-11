@@ -1,14 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect} from 'react';
 import s from './Modal.module.css'
 
+
 const Modal = ({handleCloseModal}) => {
+ 
 useEffect(()=>{
 const handleKeyDown=e=>{
 if(e.key==="Escape"){
     handleCloseModal();
 }
 }
+
 document.addEventListener('keydown', handleKeyDown);
+
+
 })
     const handleBackdropClick=(e)=>{
 
@@ -20,10 +25,16 @@ handleCloseModal();
     <div className={s.wrapper} onClick={handleBackdropClick}>
         <div className={s.content}>
             <>
-            <h1>Congratulations, darling</h1>
+            <h1 className={s.title}>Congratulations, darling</h1>
             <hr />
-            <p>Here is all of my wishes for you:</p>
-            <p className={s.congrats}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis saepe, dolore eius quod commodi cupiditate? Esse, voluptatibus? Aperiam nesciunt commodi illum quia, possimus facilis? Tempora culpa reprehenderit id est.</p>
+            <p  className={s.title}>Here is all of my wishes for you:</p>
+            <p className={s.congrats}>Привіт,  сонечко! Ось і настав цей день, знаю, що ти не любиш той факт що вже трохи піджимає час і ти все ближче до статусу «дідуня».
+Ох, згадую ті часи, коли ми познайомились і розумію, що вже майже рік! А я все більше і більше радію від твоїх повідомлень і милого личка в відправленій фоточці.
+Я хочу тобі побажати перед усім міцного здоров’я! Воно зараз пригодиться. Залишайся таким цілеспрямованим, яким ти зараз є, йди маленькими кроками до успіху і ніколи не зупиняйся, як би життя тебе не било. Став це життя раком, щоб воно тебе не поставило…) А я в свою чергу теж постараюсь допомогти. Завжди можеш лічити на мою підтримку, я завжди поруч і готова йти з тобою вперед. Звичайно, на цьому бажання не закінчуються. Бажаю тобі тримати біля себе і не відпускати найдорожчих людей в твоєму житті, які, дійсно, не дають привід сумніватися в їх щирості до тебе. Ти заслуговуєш, як і кожна людина в цьому світі, тільки на порядних людей біля себе. 
+Бажаю тобі ніколи не втрачати мотивації, і любити це життя кожною частинкою свого тіла. Воно прекрасне. Воно дасть тобі в майбутньому кожен раз більше насолоджуватися ним і відкривати для себе багато можливостей.
+Живи, розвивайся, відпочивай і насолоджуйся життям.
+А я в свою чергу теж зроблю вклад в те, щоб ти більше насолод моментами. 
+Мій коханий хлопчику, мій милий Даню, happy nineteen!.</p>
 
 
             </>

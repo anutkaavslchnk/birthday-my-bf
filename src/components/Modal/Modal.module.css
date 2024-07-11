@@ -6,12 +6,13 @@
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.5);
+	overflow:scroll;
 }
 .content{
 position:relative;
 background-color: white;
 padding: 20px;
-overflow: hidden;
+overflow:scroll;
 max-width: 500px;
 border-radius: 5px;
 }
@@ -30,4 +31,11 @@ border-radius: 5px;
     margin-top: 10px;
 font-style:italic;
 color:cornflowerblue;
+}
+.title{
+	color:black;
+}
+.btnletter{
+	color:black;
+	font-style:italic;
 }
