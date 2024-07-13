@@ -5,16 +5,16 @@ import swal from 'sweetalert';
 import s from '../src/App.module.css';
 import BalloonsModal from "./components/BalloonsModal/BalloonsModal";
 import Body from "./components/Body/Body";
-// import GalleryPhoto from "./components/GalleryPhoto/GalleryPhoto";
+import Kisses from "./components/Kisses/Kisses";
 
 const App = () => {
   const [questionBefore, setQuestionBefore] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [openBalloonsModal, setOpenBalloonsModal] = useState(false);
   const [showBody, setShowBody] = useState(false);
-
-
-
+  const [showBalloonsButton, setShowBalloonsButton] = useState(false);
+  const [showKissesButton, setShowKissesButton] = useState(false);
+  const [openKissesModal, setOpenKissesModal] = useState(false);
 
   useEffect(() => {
     let userResponse = null;
@@ -38,12 +38,29 @@ const App = () => {
     setShowBody(true);
   };
 
-  // const handleOpenBalloonsModal = () => {
-  //   setOpenBalloonsModal(true);
-  // };
+  const handleOpenBalloonsModal = () => {
+    setOpenBalloonsModal(true);
+  };
 
   const handleCloseBalloonsModal = () => {
     setOpenBalloonsModal(false);
+    setShowBalloonsButton(false); 
+    setShowBody(false); 
+    setIsOpen(false); 
+    setShowKissesButton(true); 
+  };
+
+  const handleNextPage = () => {
+    setShowBody(false);
+    setShowBalloonsButton(true);
+  };
+
+  const handleCloseKisses = () => {
+    setOpenKissesModal(false);
+  };
+
+  const handleOpenKisses = () => {
+    setOpenKissesModal(true);
   };
 
   return (
@@ -52,8 +69,8 @@ const App = () => {
         <div className={s.wave}></div>
         <div className={s.wave}></div>
         <div className={s.wave}></div>
-        {/* <Begin handleOpenModal={handleOpenModal} /> */}
-        {questionBefore === "Yes kicia" && !showBody && (
+        
+        {questionBefore === "Yes kicia" && !showBody && !showBalloonsButton && !showKissesButton && (
           <Begin handleOpenModal={handleOpenModal} />
         )}
         
@@ -61,16 +78,25 @@ const App = () => {
           <Modal handleCloseModal={handleCloseModal} />
         )}
 
-        {showBody && <Body />}
+        {showBody && <Body onNextPage={handleNextPage} />}
 
-        
-        {/* <button className={s.btnballoon} onClick={handleOpenBalloonsModal}>
-          Balloons
-        </button> */}
-        {openBalloonsModal && (
-          <BalloonsModal handleCloseBalloonsModal={handleCloseBalloonsModal}></BalloonsModal>
+        {showBalloonsButton && (
+          <button className={s.btnballoon} onClick={handleOpenBalloonsModal}>
+            Balloons
+          </button>
         )}
-        {/* <GalleryPhoto></GalleryPhoto> */}
+
+        {openBalloonsModal && (
+          <BalloonsModal handleCloseBalloonsModal={handleCloseBalloonsModal} />
+        )}
+
+        {showKissesButton && ( 
+          <button className={s.kisses} onClick={handleOpenKisses}>A lot of kisses</button>
+        )}
+
+        {openKissesModal && (
+          <Kisses handleCloseKisses={handleCloseKisses} />
+        )}
       </div>
     </>
   );

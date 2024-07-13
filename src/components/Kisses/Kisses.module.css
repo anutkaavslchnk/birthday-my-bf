@@ -1,0 +1,61 @@
+
+.wrapper{
+    position: fixed;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.content{
+position:relative;
+background-color: white;
+padding: 20px;
+overflow: hidden;
+max-width: 500px;
+border-radius: 5px;
+}
+
+.close{
+    position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: transparent;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.congrats{
+    margin-top: 10px;
+font-style:italic;
+color:cornflowerblue;
+}
+.kisses{
+    padding:10px 20px 10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color:red;
+    font-family: 'sans-serif', 'Kanit';
+    color:white;
+    font-size:20px;
+    margin-top: 80px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+    margin-top: 10px;
+}
+
+.modalbtns{
+    padding:5px 10px 5px 10px;
+    border-radius:10px;
+    border:none;
+    background-color:cadetblue;
+    font-family: 'sans-serif', 'Kanit';
+    color:white;
+    font-size:20px;
+    display:block;
+    margin-top: 10px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+  
+}

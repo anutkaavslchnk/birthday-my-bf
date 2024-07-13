@@ -1,0 +1,93 @@
+.text:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    left: 30%;
+    top: 50%;
+    animation: abomination1 7.5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  
+  
+    @keyframes abomination1 {
+    0% {
+      content: "S";
+    }
+    4% {
+      content: "So";
+    }
+    8% {
+      content: "So ";
+    }
+    12% {
+      content: "So p";
+    }
+    16% {
+      content: "So pr";
+    }
+    20% {
+      content: "So pro";
+    }
+    24% {
+      content: "So prou";
+    }
+    28% {
+      content: "So proud";
+    }
+    32% {
+      content: "So proud ";
+    }
+    36% {
+      content: "So proud o";
+    }
+    40% {
+      content: "So proud of";
+    }
+    44% {
+      content: "So proud of ";
+    }
+    48% {
+      content: "So proud of y";
+    }
+    52% {
+      content: "So proud of yo";
+    }
+    56% {
+      content: "So proud of you";
+    }
+    60% {
+      content: "So proud of you,";
+    }
+    64% {
+      content: "So proud of you, ";
+    }
+    68% {
+      content: "So proud of you, d";
+    }
+    72% {
+      content: "So proud of you, da";
+    }
+    76% {
+      content: "So proud of you, dar";
+    }
+    80% {
+      content: "So proud of you, darl";
+    }
+    84% {
+      content: "So proud of you, darli";
+    }
+    88% {
+      content: "So proud of you, darlin";
+    }
+    92% {
+      content: "So proud of you, darling";
+    }
+    96% {
+      content: "So proud of you, darling ";
+    }
+    100% {
+      content: "So proud of you, darling ❤️";
+    }
+}

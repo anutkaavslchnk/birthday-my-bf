@@ -1,12 +1,11 @@
+// Body.js
 import { useState } from "react";
 import swal from 'sweetalert';
 import s from './Body.module.css';
 
-const Body = () => {
+const Body = ({ onNextPage }) => {
   const [showBody, setShowBody] = useState(false);
-
   const [clicks, setClicks] = useState(0);
-
 
   const handleAddLove = () => {
     if (clicks >= 1000) {
@@ -23,8 +22,6 @@ const Body = () => {
   const handleDeleteLove = () => {
     swal("Це неможливо, навіть не намагайся!");
   };
-
-
 
   return (
     <>
@@ -43,13 +40,9 @@ const Body = () => {
               <button className={s.btns} onClick={handleAddLove}>Add</button>
               <button className={s.btns} onClick={handleDeleteLove}>Remove</button>
             </div>
-       
-    
-        
+            <button onClick={onNextPage}>Next page</button>
           </>
         )}
-
-   
       </div>
     </>
   );
