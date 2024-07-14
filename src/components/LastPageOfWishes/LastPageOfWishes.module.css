@@ -1,93 +1,147 @@
-.text:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    line-height: 48px;
-    left: 30%;
-    top: 50%;
-    animation: abomination1 7.5s linear 1;
-    animation-fill-mode: forwards;
-  }
-  
-  
-    @keyframes abomination1 {
-    0% {
-      content: "S";
-    }
-    4% {
-      content: "So";
-    }
-    8% {
-      content: "So ";
-    }
-    12% {
-      content: "So p";
-    }
-    16% {
-      content: "So pr";
-    }
-    20% {
-      content: "So pro";
-    }
-    24% {
-      content: "So prou";
-    }
-    28% {
-      content: "So proud";
-    }
-    32% {
-      content: "So proud ";
-    }
-    36% {
-      content: "So proud o";
-    }
-    40% {
-      content: "So proud of";
-    }
-    44% {
-      content: "So proud of ";
-    }
-    48% {
-      content: "So proud of y";
-    }
-    52% {
-      content: "So proud of yo";
-    }
-    56% {
-      content: "So proud of you";
-    }
-    60% {
-      content: "So proud of you,";
-    }
-    64% {
-      content: "So proud of you, ";
-    }
-    68% {
-      content: "So proud of you, d";
-    }
-    72% {
-      content: "So proud of you, da";
-    }
-    76% {
-      content: "So proud of you, dar";
-    }
-    80% {
-      content: "So proud of you, darl";
-    }
-    84% {
-      content: "So proud of you, darli";
-    }
-    88% {
-      content: "So proud of you, darlin";
-    }
-    92% {
-      content: "So proud of you, darling";
-    }
-    96% {
-      content: "So proud of you, darling ";
-    }
-    100% {
-      content: "So proud of you, darling ❤️";
-    }
+.textfirst:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  left: 30%;
+  top: 50%;
+  animation: abomination1 7.5s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes abomination1 {
+  0% { content: "S"; }
+  4% { content: "So"; }
+  8% { content: "So "; }
+  12% { content: "So p"; }
+  16% { content: "So pr"; }
+  20% { content: "So pro"; }
+  24% { content: "So prou"; }
+  28% { content: "So proud"; }
+  32% { content: "So proud "; }
+  36% { content: "So proud o"; }
+  40% { content: "So proud of"; }
+  44% { content: "So proud of "; }
+  48% { content: "So proud of y"; }
+  52% { content: "So proud of yo"; }
+  56% { content: "So proud of you"; }
+  60% { content: "So proud of you,"; }
+  64% { content: "So proud of you, "; }
+  68% { content: "So proud of you, d"; }
+  72% { content: "So proud of you, da"; }
+  76% { content: "So proud of you, dar"; }
+  80% { content: "So proud of you, darl"; }
+  84% { content: "So proud of you, darli"; }
+  88% { content: "So proud of you, darlin"; }
+  92% { content: "So proud of you, darling"; }
+  96% { content: "So proud of you, darling "; }
+  100% { content: "So proud of you, darling ❤️"; }
+}
+
+.textfirst {
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.textsecond:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  left: 20%;
+  top: 50%;
+  animation: abomination2 7.5s linear 1;
+  animation-fill-mode: forwards;
+}
+
+
+/* Here’s to another trip around the sun */
+
+
+.textfourth:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  left: 30%;
+  top: 70%;
+  animation: abomination4 7.5s linear 1;
+  animation-fill-mode: forwards;
+}
+
+/* Happy birthday to the man who stole my heart and never gave it back! */
+@keyframes abomination4 {
+  0% { content: "H"; }
+  2% { content: "Ha"; }
+  5% { content: "Hap"; }
+  8% { content: "Happ"; }
+  11% { content: "Happy"; }
+  14% { content: "Happy "; }
+  17% { content: "Happy b"; }
+  20% { content: "Happy bi"; }
+  23% { content: "Happy bir"; }
+  26% { content: "Happy birt"; }
+  29% { content: "Happy birth"; }
+  32% { content: "Happy birthd"; }
+  35% { content: "Happy birthda"; }
+  38% { content: "Happy birthday"; }
+  41% { content: "Happy birthday "; }
+  44% { content: "Happy birthday t"; }
+  47% { content: "Happy birthday to"; }
+  50% { content: "Happy birthday to t"; }
+  53% { content: "Happy birthday to th"; }
+  56% { content: "Happy birthday to the"; }
+  59% { content: "Happy birthday to the "; }
+  62% { content: "Happy birthday to the m"; }
+  65% { content: "Happy birthday to the ma"; }
+  68% { content: "Happy birthday to the man"; }
+  71% { content: "Happy birthday to the man "; }
+  74% { content: "Happy birthday to the man w"; }
+  77% { content: "Happy birthday to the man wh"; }
+  80% { content: "Happy birthday to the man who"; }
+  82% { content: "Happy birthday to the man who "; }
+  85% { content: "Happy birthday to the man who s"; }
+  87% { content: "Happy birthday to the man who st"; }
+  89% { content: "Happy birthday to the man who sto"; }
+  90% { content: "Happy birthday to the man who stol"; }
+  91% { content: "Happy birthday to the man who stole"; }
+  92% { content: "Happy birthday to the man who stole "; }
+  93% { content: "Happy birthday to the man who stole m"; }
+  94% { content: "Happy birthday to the man who stole my"; }
+  95% { content: "Happy birthday to the man who stole my "; }
+  96% { content: "Happy birthday to the man who stole my h"; }
+  97% { content: "Happy birthday to the man who stole my he"; }
+  98% { content: "Happy birthday to the man who stole my hea"; }
+  99% { content: "Happy birthday to the man who stole my hear"; }
+  100% { content: "Happy birthday to the man who stole my heart"; }
+  100% { content: "Happy birthday to the man who stole my heart "; }
+  100% { content: "Happy birthday to the man who stole my heart a"; }
+  100% { content: "Happy birthday to the man who stole my heart an"; }
+  100% { content: "Happy birthday to the man who stole my heart and"; }
+  100% { content: "Happy birthday to the man who stole my heart and "; }
+  100% { content: "Happy birthday to the man who stole my heart and n"; }
+  100% { content: "Happy birthday to the man who stole my heart and ne"; }
+  100% { content: "Happy birthday to the man who stole my heart and nev"; }
+  100% { content: "Happy birthday to the man who stole my heart and neve"; }
+  100% { content: "Happy birthday to the man who stole my heart and never"; }
+  100% { content: "Happy birthday to the man who stole my heart and never "; }
+  100% { content: "Happy birthday to the man who stole my heart and never g"; }
+  100% { content: "Happy birthday to the man who stole my heart and never ga"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gav"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave "; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave i"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it "; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it b"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it ba"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it bac"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it back"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it back!"; }
+  100% { content: "Happy birthday to the man who stole my heart and never gave it back! 💋"; }
 }

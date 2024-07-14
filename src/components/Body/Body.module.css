@@ -158,3 +158,20 @@ gap:10px;
 }
 
 
+.nextpage{
+
+
+  padding:10px 20px 10px 20px;
+  border-radius:10px;
+  border:none;
+  background-color:coral;
+  font-family: 'sans-serif', 'Kanit';
+  color:white;
+  font-size:20px;
+  margin-top: 80px;
+  cursor:pointer;
+  transition-duration: 0.4s;
+}
+.nextpage:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

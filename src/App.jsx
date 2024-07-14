@@ -6,6 +6,7 @@ import s from '../src/App.module.css';
 import BalloonsModal from "./components/BalloonsModal/BalloonsModal";
 import Body from "./components/Body/Body";
 import Kisses from "./components/Kisses/Kisses";
+import LastPageOfWishes from "./components/LastPageOfWishes/LastPageOfWishes"; // Import the LastPageOfWishes component
 
 const App = () => {
   const [questionBefore, setQuestionBefore] = useState(null);
@@ -15,6 +16,8 @@ const App = () => {
   const [showBalloonsButton, setShowBalloonsButton] = useState(false);
   const [showKissesButton, setShowKissesButton] = useState(false);
   const [openKissesModal, setOpenKissesModal] = useState(false);
+  const [showWishesButton, setShowWishesButton] = useState(false); // New state for Wishes button
+  const [showLastPageOfWishes, setShowLastPageOfWishes] = useState(false); // New state for LastPageOfWishes
 
   useEffect(() => {
     let userResponse = null;
@@ -57,10 +60,16 @@ const App = () => {
 
   const handleCloseKisses = () => {
     setOpenKissesModal(false);
+    setShowKissesButton(false); 
+    setShowWishesButton(true); 
   };
 
   const handleOpenKisses = () => {
     setOpenKissesModal(true);
+  };
+
+  const handleShowLastPageOfWishes = () => {
+    setShowLastPageOfWishes(true);
   };
 
   return (
@@ -70,32 +79,44 @@ const App = () => {
         <div className={s.wave}></div>
         <div className={s.wave}></div>
         
-        {questionBefore === "Yes kicia" && !showBody && !showBalloonsButton && !showKissesButton && (
-          <Begin handleOpenModal={handleOpenModal} />
-        )}
-        
-        {isOpen && (
-          <Modal handleCloseModal={handleCloseModal} />
+        {!showLastPageOfWishes && (
+          <>
+            {questionBefore === "Yes kicia" && !showBody && !showBalloonsButton && !showKissesButton && !showWishesButton && (
+              <Begin handleOpenModal={handleOpenModal} />
+            )}
+            
+            {isOpen && (
+              <Modal handleCloseModal={handleCloseModal} />
+            )}
+
+            {showBody && <Body onNextPage={handleNextPage} />}
+
+            {showBalloonsButton && (
+              <button className={s.btnballoon} onClick={handleOpenBalloonsModal}>
+                Balloons
+              </button>
+            )}
+
+            {openBalloonsModal && (
+              <BalloonsModal handleCloseBalloonsModal={handleCloseBalloonsModal} />
+            )}
+
+            {showKissesButton && ( 
+              <button className={s.kisses} onClick={handleOpenKisses}>A lot of kisses</button>
+            )}
+
+            {openKissesModal && (
+              <Kisses handleCloseKisses={handleCloseKisses} />
+            )}
+
+            {showWishesButton && (
+              <button className={s.wishes} onClick={handleShowLastPageOfWishes}>Last page for ma boy</button>
+            )}
+          </>
         )}
 
-        {showBody && <Body onNextPage={handleNextPage} />}
-
-        {showBalloonsButton && (
-          <button className={s.btnballoon} onClick={handleOpenBalloonsModal}>
-            Balloons
-          </button>
-        )}
-
-        {openBalloonsModal && (
-          <BalloonsModal handleCloseBalloonsModal={handleCloseBalloonsModal} />
-        )}
-
-        {showKissesButton && ( 
-          <button className={s.kisses} onClick={handleOpenKisses}>A lot of kisses</button>
-        )}
-
-        {openKissesModal && (
-          <Kisses handleCloseKisses={handleCloseKisses} />
+        {showLastPageOfWishes && (
+          <LastPageOfWishes />
         )}
       </div>
     </>

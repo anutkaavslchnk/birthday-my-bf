@@ -40,7 +40,7 @@ const Body = ({ onNextPage }) => {
               <button className={s.btns} onClick={handleAddLove}>Add</button>
               <button className={s.btns} onClick={handleDeleteLove}>Remove</button>
             </div>
-            <button onClick={onNextPage}>Next page</button>
+            <button className={s.nextpage} onClick={onNextPage}>Next page</button>
           </>
         )}
       </div>

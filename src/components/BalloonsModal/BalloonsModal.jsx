@@ -29,8 +29,8 @@ const BalloonsModal = ({handleCloseBalloonsModal}) => {
                 <div className={s.content}>
                     <>
                     <p>Today everything is for you! Balloons for Dany!</p>
-                    <button onClick={handleBalloons} className={s.balloons}>Balloons!</button>
-<button onClick={()=>setBalloons(false)}>Stop</button>
+                    <button onClick={handleBalloons} className={s.btnballoonsstop}>Balloons!</button>
+<button className={s.btnballoonsstop} onClick={()=>setBalloons(false)}>Stop</button>
                     <hr />
                    
 

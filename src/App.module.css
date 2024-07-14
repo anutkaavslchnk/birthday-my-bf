@@ -100,7 +100,7 @@ body {
         text-align: center;
         height: 100vh;
         position: relative;
-        z-index: 1; /* Ensure the content is above the video */
+        z-index: 1;
       
 }
 .next{
@@ -133,5 +133,20 @@ body {
     margin-top: 10px;
 }
 .kisses:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.wishes{
+    padding:10px 20px 10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color:darkgreen;
+    font-family: 'sans-serif', 'Kanit';
+    color:white;
+    font-size:20px;
+    margin-top: 80px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+}
+.wishes:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
