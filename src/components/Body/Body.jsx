@@ -36,6 +36,7 @@ const Body = ({ onNextPage }) => {
         {showBody &&  (
           <>
             <h1 className={s.title}>My love for you: {clicks}</h1>
+            <p>Press the btn a lot of times</p>
             <div className={s.btnscont}>
               <button className={s.btns} onClick={handleAddLove}>Add</button>
               <button className={s.btns} onClick={handleDeleteLove}>Remove</button>
